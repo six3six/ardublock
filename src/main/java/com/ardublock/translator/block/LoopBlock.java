@@ -3,6 +3,7 @@ package com.ardublock.translator.block;
 import com.ardublock.translator.Translator;
 import com.ardublock.translator.block.exception.SocketNullException;
 import com.ardublock.translator.block.exception.SubroutineNotDeclaredException;
+import com.ardublock.translator.block.sumobot.Config;
 
 
 public class LoopBlock extends TranslatorBlock
@@ -15,6 +16,7 @@ public class LoopBlock extends TranslatorBlock
 	@Override
 	public String toCode() throws SocketNullException, SubroutineNotDeclaredException
 	{
+		Config.setupGo(translator);
 		String ret;
 		ret = "void loop()\n{\n";
 		if (translator.isGuinoProgram())
