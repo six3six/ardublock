@@ -3426,22 +3426,30 @@
 
         <BlockGenus name="sumo_forward" kind="command" color="197 34 35" initlabel="bg.sumo_forward">
             <BlockConnectors>
-                <BlockConnector connector-type="number" connector-kind="socket" label="bc.speed" />
+                <BlockConnector connector-type="number" connector-kind="socket" label="bc.speed" >
+                    <DefaultArg genus-name="number" label="255"/>
+                </BlockConnector>
             </BlockConnectors>
         </BlockGenus>
         <BlockGenus name="sumo_turn_left" kind="command" color="197 34 35" initlabel="bg.sumo_turn_left">
             <BlockConnectors>
-                <BlockConnector connector-type="number" connector-kind="socket" label="bc.speed" />
+                <BlockConnector connector-type="number" connector-kind="socket" label="bc.speed" >
+                    <DefaultArg genus-name="number" label="255"/>
+                </BlockConnector>
             </BlockConnectors>
         </BlockGenus>
         <BlockGenus name="sumo_turn_right" kind="command" color="197 34 35" initlabel="bg.sumo_turn_right">
             <BlockConnectors>
-                <BlockConnector connector-type="number" connector-kind="socket" label="bc.speed" />
+                <BlockConnector connector-type="number" connector-kind="socket" label="bc.speed" >
+                    <DefaultArg genus-name="number" label="255"/>
+                </BlockConnector>
             </BlockConnectors>
         </BlockGenus>
         <BlockGenus name="sumo_backward" kind="command" color="197 34 35" initlabel="bg.sumo_turn_right">
             <BlockConnectors>
-                <BlockConnector connector-type="number" connector-kind="socket" label="bc.speed" />
+                <BlockConnector connector-type="number" connector-kind="socket" label="bc.speed" >
+                    <DefaultArg genus-name="number" label="255"/>
+                </BlockConnector>
             </BlockConnectors>
         </BlockGenus>
 
@@ -3897,6 +3905,7 @@
                 <BlockGenusMember>sumo_tcrt_left</BlockGenusMember>
 
                 <BlockGenusMember>sumo_distance</BlockGenusMember>
+                <BlockGenusMember>delay</BlockGenusMember>
             </BlockDrawer>
         </BlockDrawerSet>
     </BlockDrawerSets>
