@@ -25,6 +25,7 @@ import javax.swing.filechooser.FileFilter;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
 import com.ardublock.core.Context;
+import com.ardublock.translator.Translator;
 import com.ardublock.ui.listener.ArdublockWorkspaceListener;
 import com.ardublock.ui.listener.GenerateCodeButtonListener;
 import com.ardublock.ui.listener.NewButtonListener;
@@ -143,6 +144,13 @@ public class OpenblocksFrame extends JFrame
 				}
 			}
 		});
+		JButton generateCode = new JButton(uiMessageBundle.getString("ardublock.ui.generate"));
+		generateCode.addActionListener(new ActionListener () {
+			public void actionPerformed(ActionEvent e) {
+				Translator translator = new Translator(workspace);
+				//System.out.println(translator.translate());
+			}
+		});
 
 		buttons.add(newButton);
 		buttons.add(saveButton);
@@ -150,6 +158,7 @@ public class OpenblocksFrame extends JFrame
 		buttons.add(openButton);
 		buttons.add(generateButton);
 		buttons.add(serialMonitorButton);
+		buttons.add(generateCode);
 
 		JPanel bottomPanel = new JPanel();
 		JButton websiteButton = new JButton(uiMessageBundle.getString("ardublock.ui.website"));
