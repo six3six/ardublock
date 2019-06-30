@@ -1,7 +1,5 @@
-language: java
-  - openjdk7
-  - openjdk6
-  - oraclejdk7
-  - oraclejdk6
+language:
+  - openjdk8
+  - oraclejdk8
 before_install: ./install_openblocks
 install: mvn validate && mvn install
