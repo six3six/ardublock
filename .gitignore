@@ -10,10 +10,7 @@ openblocks.iml
 bin/
 .settings/
 *~
-src/main/resources/com/ardublock/block/ardublock.zip
 deploy.sh
-<<<<<<< HEAD
-=======
 test-output
-src/main/resources/com/ardublock/block/littlebits/files
->>>>>>> upstream/master
+*.iml
+.idea
