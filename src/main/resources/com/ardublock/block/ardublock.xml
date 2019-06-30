@@ -3726,10 +3726,12 @@
             <FamilyMember>sumo_turn_right</FamilyMember>
             <FamilyMember>sumo_turn_left</FamilyMember>
             <FamilyMember>sumo_backward</FamilyMember>
-
+        </BlockFamily>
+        <BlockFamily>
             <FamilyMember>sumo_tcrt_right</FamilyMember>
             <FamilyMember>sumo_tcrt_left</FamilyMember>
-
+        </BlockFamily>
+        <BlockFamily>
             <FamilyMember>sumo_distance</FamilyMember>
         </BlockFamily>
 
