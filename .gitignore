@@ -7,10 +7,11 @@ target/
 .project
 .settings
 openblocks.iml
+ardublock.iml
 bin/
 .settings/
 *~
 deploy.sh
 test-output
 *.iml
-.idea
+lib
